@@ -1,0 +1,89 @@
+/*ol li {
+	display:inline-block;
+	background: red;
+	font-size: 20pt;
+	
+	border:  5px solid black;
+	border-radius: 20px;
+	
+	margin: 15px 45px;
+	margin-color: #9400D3;
+	
+	padding: 20px;
+}*/
+
+body {
+	margin:0;
+}
+
+ol {
+	list-style:none;
+	margin:0 ;
+}
+
+a {
+	text-decoration: none;
+	/*font-family: 'Lora', serif;*/
+	transition:.5s linear;
+	
+}
+nav {
+	display:block;
+	width: 100%;
+	margin:0;
+}
+
+.menu ol {
+	padding:1em 0;
+	background:#ECDAD6;
+	
+}
+
+
+.menu a {
+	padding: 1em;
+	border-right:1px solid #b19891;
+	color: #695753;
+	
+}
+.menu a:hover {
+	background: red;
+}	
+.menu li {
+	display: inline;
+	
+}
+
+li.bmw > ol {
+		position:absolute;
+		top:3.1em;
+		left:5.5em;
+		display:none;      
+    }
+li.audi > ol {
+		position:absolute;
+		top:3.1em;
+		left:10.2em;
+		display:none;      
+    }	
+li:hover > ol {
+        display:block;
+		padding:0;		
+        width:auto;  /*Задаем ширину выпадающего меню*/      
+    }	
+ li:hover > ol > li {
+	
+    display:block; /*Убираем горизонтальное позиционирование*/
+    }
+ li:hover > ol > li > a {
+	width: auto;
+	display:block;
+	padding: 1em;
+	border-right:none; 
+ }
+ 
+ p {
+	padding-top:50em;
+ }	 
+
+	
