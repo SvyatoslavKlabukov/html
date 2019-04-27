@@ -83,7 +83,17 @@ li:hover > ol {
  }
  
  p {
+	color: green;
 	padding-top:50em;
- }	 
+	margin-top: 0;
+ }	
+ 
+.fon {
+	background-image: url(../im2.jpg);
+	background-size: cover;
+	/*background-position: left top;*/
+	/*background-repeat: repeat-y;*/
+	background-attachment: fixed;
+}	
 
 	

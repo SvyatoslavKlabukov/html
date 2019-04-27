@@ -1,0 +1,37 @@
+.obtekanie {
+	float: left;
+	margin-right: 10px;
+}
+.obtekanie2 {
+	float: left;
+	width: 200px;
+	margin: 10px;
+}
+.obtekanie3 {
+	float: right;
+	margin-left: 10px;
+}
+.dostaevskii {
+	margin-left: 230px;
+}
+.reference {
+	background: rgb(0, 255, 0);
+}
+
+.button {
+	text-decoration:none;
+	color:black;
+	font-size: 22px;
+	display: block-inline;
+	margin: 20px 0;
+	padding: 15px 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: red;
+}
+p {
+	margin-bottom:30px;
+}
+fieldset {
+	padding-bottom: 50px;
+}
