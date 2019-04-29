@@ -1,0 +1,59 @@
+@import url("./grid.css");
+@keyframes kadr { 
+  0% { opacity: 0; } 
+  11.11% { opacity: 1; } 
+  33.33% { opacity: 1; } 
+  44.44% { opacity: 0; } 
+  100% { opacity: 0; } 
+} 
+
+.card {
+	height: 100px;
+	border: 2px solid green;
+	margin: 5px;
+}
+
+.card6 {
+	height: 440px;
+	border: 2px solid green;
+	margin: 5px;
+}
+
+.slider li {
+	/*display: none;*/
+	list-style: none;
+}
+
+/*.slider li.active {
+	display: block;
+}*/
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+.slider {
+	margin: 0;
+	padding: 0;
+	
+}
+.slider img {
+	position:absolute;
+	width: 32%; /*подскажите а как можно картинку ровно в ширину блока выставить?*/
+	height:440px;
+	animation-name: kadr;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	opacity:0;
+}
+
+.slider img:nth-child(1) {animation-delay: 0s;}
+.slider img:nth-child(2) {animation-delay: 2s;}
+.slider img:nth-child(3) {animation-delay: 4s;}	
+
+h3 {
+	position: absolute;
+	top: 10%;
+	left: 70%;
+	color:red;
+}
