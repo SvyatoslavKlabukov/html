@@ -1,0 +1,73 @@
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Анкета</title>
+		<style>
+			.marg {
+				margin-right: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="POST"
+			enctype="multipart/form-data">
+			<fieldset>
+				<legend align="center">Анкета</legend>
+				<p>
+					<label for="name">Введите имя</label>
+					<input type="text" id="name" required>
+					<label for="surname">Введите фамалию</label>
+					<input type="text" id="surname" required>
+				</p>
+				<p>
+					<span class="marg">Ваш пол:</span>
+					<label><input name="gender" type="radio">Мужской</label>
+					<label><input name="gender" type="radio">Женский</label>
+				</p>
+				<p>
+					<label for="mail">Введите вашу почту</label>
+					<input type="email" id="mail" placeholder="email@mail.com">
+				</p>
+				<p>
+					<label>Придумайте пароль<input type="password" minlength="5"
+						maxlength="10">
+					</label>
+				</p>
+				<p>
+					<label>Повторите пароль<input type="password" minlength="5"
+						maxlength="10">
+					</label>
+				</p>
+				<p>
+					<label for="da">Дата вашего рождения</label>
+					<input id="da" type="date">
+				</p>
+				<p>
+					<label for="chislo">Введите ваше любимое нечетное число</label>
+					<input  id="chislo" type="number" min="1" step="2">
+				</p>
+				<p>
+					<label for="film">Выберете ваш любимый фильм из списка</label>
+					<select id="film">
+						<optgroup label="фильмы">
+							<option>Мстители</option>
+							<option>Троя</option>
+						</optgroup>
+						<optgroup label="мультик">
+							<option>Шрек</option>
+						</optgroup>
+						<option>Не люблю смотреть фильмы</option>
+					</select>
+				</p>
+				<p>
+					<label for="about">Напишите о себе</label>
+					<textarea id="about" required rows="3" placeholder="напиши о себе">
+					</textarea>
+				</p>
+				<button type="submit">Отправить данные</button>
+				<button type="reset">Очистить</button>
+
+			</fieldset>
+		</form>
+	</body>
+</html>
